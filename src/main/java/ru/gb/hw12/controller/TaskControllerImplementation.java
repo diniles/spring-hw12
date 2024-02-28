@@ -14,7 +14,7 @@ public class TaskControllerImplementation implements TaskController {
 
     public TaskControllerImplementation(TaskServiceFacade taskServiceFacade) {
         this.taskServiceFacade = taskServiceFacade;
-        taskServiceFacade.createObserver(task -> System.out.println("  Task '" + task + "' updated "));
+        taskServiceFacade.createObserver(task -> System.out.println("Task " + task + " updated "));
     }
 
     @Override
